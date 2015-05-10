@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "Pizza.h"
+@protocol RestaurantManagerDelegate;
 
-@interface Kitchen : NSObject
+@interface Kitchen : NSObject 
+@property (nonatomic, weak) id <RestaurantManagerDelegate> delegate;
 
 - (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings;
 
-// test commit
+
+
 
 @end

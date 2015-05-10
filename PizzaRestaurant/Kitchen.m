@@ -7,13 +7,44 @@
 //
 
 #import "Kitchen.h"
-#import "Pizza.h"
+#import "RestaurantManagerDelegate.h"
 
 @implementation Kitchen
 
-- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings{
+- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings
+{
     
-    return [Pizza pizzaWithSize:size andToppings:toppings];
+    if (self.delegate != nil){
+        if([self.delegate kitchenShouldUpgradeOrder:self]){
+            size = Large;
+        }
+    }
+        
+    Pizza* pizza;
+    
+    // if there's no delegate, just make the pizza. OR, if there  anchovies under "toppings",
+    
+    if (self.delegate != nil){
+        if([self.delegate kitchen:self shouldMakePizzaOfSize:size toppings:toppings]){
+            pizza = [[Pizza alloc] initWithSize:size andToppings:toppings];
+        } else {
+            pizza = nil;
+        }
+    } else {
+        pizza = [[Pizza alloc] initWithSize:size andToppings:toppings];
+    }
+
+    if (self.delegate != nil){
+        [self.delegate kitchenDidMakePizza:pizza];
+
+    }
+    
+    return pizza;
 }
 
+//-(void)setDelegate:(id)delegate{
+//    _delegate = delegate;
+
+
 @end
+
