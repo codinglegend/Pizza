@@ -12,6 +12,8 @@
 		6001EC90197B502F00F97011 /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6001EC8F197B502F00F97011 /* Kitchen.m */; };
 		B5F65F1D1AFD338F00E65C72 /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F65F1C1AFD338F00E65C72 /* Pizza.m */; };
 		B5F65F261AFEE13E00E65C72 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F65F251AFEE13E00E65C72 /* Manager.m */; };
+		B5F65F291AFEE93C00E65C72 /* NiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F65F281AFEE93C00E65C72 /* NiceManager.m */; };
+		B5F65F2C1AFEE94800E65C72 /* MeanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F65F2B1AFEE94800E65C72 /* MeanManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +40,10 @@
 		B5F65F201AFD9D9500E65C72 /* RestaurantManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestaurantManagerDelegate.h; path = ../RestaurantManagerDelegate.h; sourceTree = "<group>"; };
 		B5F65F241AFEE13E00E65C72 /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
 		B5F65F251AFEE13E00E65C72 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+		B5F65F271AFEE93C00E65C72 /* NiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NiceManager.h; sourceTree = "<group>"; };
+		B5F65F281AFEE93C00E65C72 /* NiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NiceManager.m; sourceTree = "<group>"; };
+		B5F65F2A1AFEE94800E65C72 /* MeanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeanManager.h; sourceTree = "<group>"; };
+		B5F65F2B1AFEE94800E65C72 /* MeanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeanManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 				6001EC8F197B502F00F97011 /* Kitchen.m */,
 				B5F65F241AFEE13E00E65C72 /* Manager.h */,
 				B5F65F251AFEE13E00E65C72 /* Manager.m */,
+				B5F65F271AFEE93C00E65C72 /* NiceManager.h */,
+				B5F65F281AFEE93C00E65C72 /* NiceManager.m */,
+				B5F65F2A1AFEE94800E65C72 /* MeanManager.h */,
+				B5F65F2B1AFEE94800E65C72 /* MeanManager.m */,
 				B5F65F1B1AFD338F00E65C72 /* Pizza.h */,
 				B5F65F1C1AFD338F00E65C72 /* Pizza.m */,
 				6001EC85197B4EC300F97011 /* Supporting Files */,
@@ -155,6 +165,8 @@
 				B5F65F1D1AFD338F00E65C72 /* Pizza.m in Sources */,
 				6001EC90197B502F00F97011 /* Kitchen.m in Sources */,
 				B5F65F261AFEE13E00E65C72 /* Manager.m in Sources */,
+				B5F65F291AFEE93C00E65C72 /* NiceManager.m in Sources */,
+				B5F65F2C1AFEE94800E65C72 /* MeanManager.m in Sources */,
 				6001EC84197B4EC300F97011 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

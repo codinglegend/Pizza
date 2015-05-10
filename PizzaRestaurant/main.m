@@ -10,6 +10,7 @@
 
 #import "Kitchen.h"
 #import "Manager.h"
+#import "NiceManager.h"
 
 int main(int argc, const char * argv[])
 {
@@ -19,8 +20,8 @@ int main(int argc, const char * argv[])
         NSLog(@"Please pick your pizza size and toppings:");
         
         Kitchen *restaurantKitchen = [[Kitchen alloc]init];
-        Manager *manager = [[Manager alloc] init];
-        restaurantKitchen.delegate = manager; // tell the kitchen that its delegate is manager
+        Manager *meanmanager = [[Manager alloc] init];
+        restaurantKitchen.delegate = meanmanager; // tell the kitchen that its delegate is manager
 
         
         while (YES) {
